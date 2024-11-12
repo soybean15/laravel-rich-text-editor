@@ -19,9 +19,10 @@
         "phpunit/phpunit": "^11.0.1"
     },
 
+
     "autoload": {
         "psr-4": {
-           "Soybean15\\RichTextEditor\\": "App/Packages/RichTextEditor/src/"
+            "Soybean15\\RichTextEditor\\": "Packages/RichTextEditor/src/"
         }
     },
     "autoload-dev": {
