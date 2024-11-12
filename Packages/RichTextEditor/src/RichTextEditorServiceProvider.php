@@ -23,10 +23,8 @@ class RichTextEditorServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'rich-text-editor');
 
-
-        // $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        // Adjust the file paths for resources inside the src directory
         $this->publishes([
             __DIR__ . '/resources/js/quill.js' => public_path('js/quill.js'),
             __DIR__ . '/resources/css/quill.css' => public_path('css/quill.css'),
