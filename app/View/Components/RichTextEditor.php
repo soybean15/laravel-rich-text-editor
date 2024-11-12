@@ -13,6 +13,7 @@ class RichTextEditor extends Component
      */
     public function __construct(
         public $model,
+        public $key,
         public $value,
     )
     {
