@@ -21,9 +21,7 @@
 
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-
-            "Soybean15\\RichTextEditor\\": "Packages/RichTextEditor/src/"
+           "Soybean15\\RichTextEditor\\": "Packages/RichTextEditor/src/"
         }
     },
     "autoload-dev": {

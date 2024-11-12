@@ -23,6 +23,7 @@ class RichTextEditorServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        
 
         $this->publishes([
             __DIR__ . '/../../resources/js/quill.js' => public_path('js/quill.js'),
