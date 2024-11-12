@@ -30,5 +30,7 @@ class RichTextEditorServiceProvider extends ServiceProvider
         ], 'rich-text-editor-assets');
 
 
+
+
     }
 }
