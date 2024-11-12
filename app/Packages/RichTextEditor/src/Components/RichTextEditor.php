@@ -1,6 +1,11 @@
 <?php
 
-namespace App\Packages\RichTextEditor\src\Components;
+// namespace App\Packages\RichTextEditor\src\Components;
+
+// use Closure;
+// use Illuminate\Contracts\View\View;
+// use Illuminate\View\Component;
+namespace Soybean15\RichTextEditor\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;

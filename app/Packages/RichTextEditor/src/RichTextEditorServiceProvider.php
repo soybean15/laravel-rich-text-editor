@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Packages\RichTextEditor\src;
+namespace Soybean15\RichTextEditor;
+
 
 use App\View\Components\RichTextEditor;
 use Illuminate\Support\Facades\Blade;
@@ -24,9 +25,10 @@ class RichTextEditorServiceProvider extends ServiceProvider
     {
 
         $this->publishes([
-            __DIR__ . '/../resources/js/quill.js' => public_path('js/quill.js'),
-            __DIR__ . '/../resources/css/quill.css' => public_path('css/quill.css'),
+            __DIR__ . '/../../resources/js/quill.js' => public_path('js/quill.js'),
+            __DIR__ . '/../../resources/css/quill.css' => public_path('css/quill.css'),
         ], 'rich-text-editor-assets');
+
 
     }
 }
