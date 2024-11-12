@@ -1,29 +1,19 @@
 {
     "name": "soybean15/rich-text-editor",
-    "type": "library",
     "description": "A Laravel package for Rich Text Editor with Quill",
     "keywords": ["laravel", "rich-text-editor", "quill"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Marlon Padilla",
-            "email": "marlonpadilla1593@gmail.com"
-        }
-    ],
+    "type": "library",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^10.0"
+       "laravel/framework": "^10.0|^11.0"
+
     },
     "autoload": {
         "psr-4": {
             "Soybean15\\RichTextEditor\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Soybean15\\RichTextEditor\\RichTextEditorServiceProvider"
-            ]
-        }
-    }
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
+
