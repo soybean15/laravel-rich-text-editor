@@ -2,9 +2,10 @@
 
 namespace Soybean15\RichTextEditor;
 
-use App\View\Components\RichTextEditor;
+
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Soybean15\RichTextEditor\Components\RichTextEditor;
 
 class RichTextEditorServiceProvider extends ServiceProvider
 {
@@ -22,7 +23,7 @@ class RichTextEditorServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-   
+
 
         // $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         // Adjust the file paths for resources inside the src directory
