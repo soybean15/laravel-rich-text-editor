@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\View\Components\RichTextEditor;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class RichTextEditorServiceProvider extends ServiceProvider
@@ -12,6 +14,7 @@ class RichTextEditorServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
+        Blade::component('rich-text-editor',RichTextEditor::class);
     }
 
     /**
@@ -19,7 +22,7 @@ class RichTextEditorServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        
+
         $this->publishes([
             __DIR__ . '/../resources/js/quill.js' => public_path('vendor/your-package/js/quill.js'),
         ], 'your-package-assets');
